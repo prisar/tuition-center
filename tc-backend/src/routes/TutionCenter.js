@@ -1,5 +1,6 @@
 const express = require('express');
 const mongodb = require('mongodb');
+const config = require('../../config/default');
 
 const router = express.Router();
 
@@ -29,7 +30,7 @@ router.delete('/:id', async (req, res) => {
 
 async function loadTutionCentersCollection() {
     const client = await mongodb.MongoClient.connect(
-        'url', {
+        config.MONGODB_URL, {
             useNewUrlParser: true
         }
     );
