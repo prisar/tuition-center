@@ -4,11 +4,12 @@
 
 const express = require('express')
 const cors = require('cors')
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+const config = require('./config/default');
 
 const app = express()
 
-app.set('port', process.env.PORT || 3030)
+app.set('port', config.PORT)
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
