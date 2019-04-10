@@ -1,38 +1,38 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <app-header></app-header>
-    <Home msg="Tuition Center"/>
-    <!-- <app-post></app-post> -->
-    <app-footer></app-footer>
-  </div>
+  <v-app>
+    <v-toolbar app>
+      <v-toolbar-title class="headline text-uppercase">
+        <span>Tuition Center</span>
+        <!-- <span class="font-weight-light">MATERIAL DESIGN</span> -->
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <!-- <v-btn
+        flat
+        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        target="_blank"
+      >
+        <span class="mr-2">Latest Release</span>
+      </v-btn> -->
+    </v-toolbar>
+
+    <v-content>
+      <Home />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
-import Home from './components/Home.vue'
-import Post from './components/Post.vue'
+import Home from './components/Home'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    'app-header': AppHeader,
-    'app-footer': AppFooter,
-    Home,
-    'app-post': Post
+    Home
+  },
+  data () {
+    return {
+      //
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

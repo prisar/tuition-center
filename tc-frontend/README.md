@@ -27,3 +27,12 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Customize configuration
+```
+vue add vuetify
+```
+```
+npm install vue-router axios vuex vue-server-renderer
+```
