@@ -32,6 +32,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Customize configuration
 ```
 vue add vuetify
+vue add @vue/eslint
 ```
 ```
 npm install vue-router axios vuex vue-server-renderer

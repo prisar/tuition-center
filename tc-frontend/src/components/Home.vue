@@ -1,17 +1,17 @@
 <template>
-    <div>
-        <h1>{{ msg }}</h1>
-        <h3>For every students and teachers</h3>
-    </div>  
+  <div>
+    <h1>{{ msg }}</h1>
+    <h3>For every students and teachers</h3>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Home',
-    props: {
-        msg: String
-    }
-}
+  name: "Home",
+  props: {
+    msg: String
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -30,5 +30,4 @@ li {
 a {
   color: #42b983;
 }
-
 </style>
